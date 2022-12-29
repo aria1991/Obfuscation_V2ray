@@ -1,6 +1,25 @@
 # Obfuscation_V2ray
 Adding obfuscation script in python to V2ray
 
+```markdown
+                                                +------------+
+                                                | V2ray      |
+                                                +------------+
+                                                      |
+                                                      | receive data
+                                                      v
++------------+    read config      +------------+    obfuscate data    +-------------+
+| Python     | --------------------> | Config    | --------------------> | V2ray      |
++------------+                     +------------+                     +-------------+
+                                                      |
+                                                      | send data
+                                                      v
+                                             +------------+
+                                             | Endpoint   |
+                                             +------------+
+
+```
+
 - This version of the script is designed to be run from the command line, and it takes a number of optional arguments that allow you to customize the obfuscation settings.
 <!--more-->
 
